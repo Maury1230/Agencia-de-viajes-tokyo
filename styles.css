@@ -1,0 +1,519 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+
+/*----------HEADER STARTS-----------*/
+
+.header {
+    color: #ededed;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    background-color: #0003;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 20;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    width: 7rem;
+}
+
+.navbar__list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navbar__link {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    border-radius: 1.5rem;
+    font-size: 1.6rem;
+    color: #ededed;
+}
+
+.navbar__link:hover {
+    background-color: #8884;
+    animation: scale .4s both;
+}
+
+.navbar__img {
+    width: 3rem;
+    height: 3rem;
+    filter: invert(1);
+}
+
+.navbar__input {
+    height: 2.6rem;
+    max-width: 20rem;
+    margin-left: 2rem;
+}
+
+.hamburger--emphatic {
+    display: none;
+    
+}
+
+
+
+/*------------------------HEADER ENDS-------------------------*/
+
+
+
+/*------------------------HERO STARS-------------------------*/
+
+.hero {
+    background-image: linear-gradient(#0005, #0005, #3C3D37)
+    ,url("./Img/tokyo-2805500_1920.jpg");
+    background-position: center center;
+    background-size: cover;
+    color: #ededed;
+    animation: aparecer-hero 1s both ;
+}
+
+.hero__principal {
+    filter: drop-shadow(0 0 4px #999);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30rem 15rem;
+}
+
+.hero__title {
+    font-size: 7rem;
+    letter-spacing: 1rem;
+}
+
+.hero__subtitle {
+    font-size: 2rem;
+    animation: aparecer 1.5s both;
+}
+
+.hero__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.hero__content {
+    max-width: 40rem;
+    min-width: 27rem;
+    font-size: 1.2rem;
+    padding: 4rem;
+}
+
+.hero__content-title {
+    font-size: 1.8rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.hero__line {
+    width: 90%;
+    height: 1px;
+    background-color: #aaa;
+}
+
+.decoration__text {
+    color: #bbb;
+    filter: drop-shadow(0 2px 5px #aaa8) drop-shadow(0 10px 40px #fff) drop-shadow(0 6px 70px #fff) ;
+}
+
+
+
+
+.about {
+    width: 100%;
+    padding-bottom: 5rem;
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+    background-image: linear-gradient(#3C3D37,#3c3d35, #3f3f3f);
+}
+
+
+.about__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about__card h2 {
+    font-size: 2.5rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+}
+
+.about__inform {
+    padding-top: 20rem ;
+    padding-bottom: 5rem;
+    text-align: center;
+    color: #ccc;
+}
+
+.about__card {
+    width: 16%;
+    height: 30rem;
+    color: #ededed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center center;
+    min-width: 20rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.about__card:hover {
+    animation: scale .6s ease both;
+}
+
+.about__title {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.about__subtitle {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+
+
+.card1{
+    background-image: linear-gradient(#0005, #3f3f3c)
+    ,url("./Img/japan-4141579_1280.jpg");
+    
+}
+
+.card2 {
+    background-image: linear-gradient(#0005, #3f3f3c)
+    ,url("./Img/night-4336403_1280.jpg");
+}
+
+.card3 {
+    background-image: linear-gradient(#0005, #3f3f3c)
+    ,url("./Img/subway-4880694_1280.jpg");
+}
+
+.card4 {
+    background-image: linear-gradient(#0005, #3f3f3c)
+    ,url("./Img/tokyo-2873793_1280.jpg");
+}
+
+
+.inform {
+    color: #ededed;
+    margin: 0 auto;
+    min-height: 100dvh;
+    padding: 5rem 0 15rem 0;
+    background-image: linear-gradient(#3f3f3f, #000a)
+    ,url("./Img/city-night-view-617590.jpg");
+    background-size: cover;
+}
+
+.inform__container {
+    padding: 10rem 0;
+}
+
+.inform__container-principal {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.inform__title {
+    font-size: 6rem;
+    padding-bottom: 3rem;
+}
+
+.inform__content {
+    font-size: 2rem;
+}
+
+.inform__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.inform__img {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 20rem;
+    height: 18rem;
+    border-radius: .5rem;
+    margin: 1rem;
+}
+
+.inform__img:hover {
+    animation: scale .8s both;
+}
+
+.box__inform {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img__stretch {
+    min-width: 20rem;
+}
+
+.inform__box-content {
+    min-width: 20rem;
+    max-width: 38%;
+    font-size: 1.5rem;
+    text-wrap: pretty;
+    
+    
+}
+
+
+.footer {
+    background-color: #333;
+    color: #ededed;
+    padding: 3rem 0 3rem 0;
+    background-image: linear-gradient(#0009, #0009);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.footer__box {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__img {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    filter: invert(2);
+}
+
+.footer__content {
+    width: 20%;
+}
+
+.footer__terms {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+.container__logo {
+    display: flex;
+    align-items: center;
+}
+
+.img__insta {
+    width: 4rem;
+    height: 4rem;
+}
+
+.footer__terms-link {
+    color: #ededed;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.footer__terms-link:hover {
+    color: #777;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .hamburger{
+        display: inline-block;
+        filter: invert(1);
+    }
+    
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+        background-color: #fff;
+    }
+
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+        background-color: #fff;
+    }
+
+    .header {
+        justify-content: center;
+        flex-wrap: nowrap;
+        
+    }
+    .header__container{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .hero__principal{
+        align-items: center;
+        padding: 15rem 0;
+    }
+    .hero__title{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .hero__content{
+        padding: 2rem;
+    }
+    .navbar__list{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        display: flex;
+        height: 100dvh;
+        width: 100vw;
+        background-color: black;
+        justify-content: center;
+        transform: translateX(768px);
+        top: 0;
+        position: fixed;
+        right: 0;
+        transition: .5s ease-in-out;
+    }
+    .navbar__list.is-active{
+        transform: translateX(0);
+    }
+    
+    .about {
+        padding-bottom: 0;
+    }
+    .about__inform{
+        padding: 6rem 0 6rem 0;
+    }
+    .inform__container{
+        padding: 0;
+    }
+    .inform__box{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .inform__container{
+        text-align: center;
+        padding: 4rem 0
+    }
+    .inform__title{
+        font-size: 3rem;
+    }
+    .inform__box-content{
+        padding-bottom: 3rem;
+    }
+    .box__inform {
+        flex-direction: column;
+    }
+    .footer__terms{
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .footer__container{
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .footer__box{
+        display: flex;
+        text-align: center;
+        padding: 2rem 0rem;
+        flex-direction: row;
+        width: 100%;
+    }
+    .footer__img{
+        padding: 2rem 0;
+    }
+    .footer__content{
+        padding: 3rem;
+        width: 95%;
+    }
+    .footer__content h2{
+        text-align: center;
+    }
+    .footer__content p {
+        text-align: justify;
+    }
+    .footer__terms-link h3 {
+        text-align: center;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        filter: blur(12px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer-hero {
+    0%{
+        filter:saturate(0);
+    }
+    100%{
+        filter: saturate(1);
+    }
+}
